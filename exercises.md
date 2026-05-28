@@ -28,6 +28,7 @@ Gọi `call_openai` với các giá trị temperature 0.0, 0.5, 1.0 và 1.5 sử
 **Bạn nhận thấy quy luật gì qua bốn phản hồi?** (2–3 câu)
 > *Câu trả lời của bạn*
 Khi temperature càng thấp (0.0), phản hồi của mô hình càng ổn định, chính xác và ít thay đổi giữa các lần gọi. Khi tăng temperature lên 0.5 và 1.0, câu trả lời bắt đầu đa dạng và sáng tạo hơn. Với temperature 1.5, phản hồi thường phong phú, bất ngờ hơn nhưng cũng có nguy cơ lan man hoặc kém nhất quán hơn.
+
 **Bạn sẽ đặt temperature bao nhiêu cho chatbot hỗ trợ khách hàng, và tại sao?**
 > *Câu trả lời của bạn*
 Tôi sẽ đặt temperature khoảng 0.2–0.5 để chatbot trả lời ổn định, chính xác và nhất quán hơn khi hỗ trợ khách hàng, đồng thời vẫn giữ được sự tự nhiên khi giao tiếp với người dùng.
