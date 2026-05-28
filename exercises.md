@@ -27,27 +27,27 @@ Gọi `call_openai` với các giá trị temperature 0.0, 0.5, 1.0 và 1.5 sử
 
 **Bạn nhận thấy quy luật gì qua bốn phản hồi?** (2–3 câu)
 > *Câu trả lời của bạn*
-
+Khi temperature càng thấp (0.0), phản hồi của mô hình càng ổn định, chính xác và ít thay đổi giữa các lần gọi. Khi tăng temperature lên 0.5 và 1.0, câu trả lời bắt đầu đa dạng và sáng tạo hơn. Với temperature 1.5, phản hồi thường phong phú, bất ngờ hơn nhưng cũng có nguy cơ lan man hoặc kém nhất quán hơn.
 **Bạn sẽ đặt temperature bao nhiêu cho chatbot hỗ trợ khách hàng, và tại sao?**
 > *Câu trả lời của bạn*
-
+Tôi sẽ đặt temperature khoảng 0.2–0.5 để chatbot trả lời ổn định, chính xác và nhất quán hơn khi hỗ trợ khách hàng, đồng thời vẫn giữ được sự tự nhiên khi giao tiếp với người dùng.
 ---
 
 ### Bài tập 2.2 — Đánh Đổi Chi Phí
 Xem xét kịch bản: 10.000 người dùng hoạt động mỗi ngày, mỗi người thực hiện 3 lần gọi API, mỗi lần trung bình ~350 token.
 
 **Ước tính xem GPT-4o đắt hơn GPT-4o-mini bao nhiêu lần cho workload này:**
-> *Câu trả lời của bạn*
-- Tổng số token mỗi ngày là: 10.000 x 3 x ~350 = ~10.500.000 token/ngày (~10.5 triệu token)
-- So sánh giá:
-+ GPT-4o: input $5 / 1M tokens, output $20 / 1M tokens
-+ GPT-4o-mini: input $0.15 / 1M tokens, output $0.60 / 1M tokens
-=> Như vậy GPT-4o đắt hơn so với GPT-4o-mini: khoảng 33 lần (input: $5/$0.15 = ~33.33, output: $20/$0.60 = ~33.33) 
+> *Câu trả lời của bạn*  
+> - Tổng số token mỗi ngày là: 10.000 x 3 x ~350 = ~10.500.000 token/ngày (~10.5 triệu token)  
+> - So sánh giá:  
+>   - GPT-4o: input $5 / 1M tokens, output $20 / 1M tokens  
+>   - GPT-4o-mini: input $0.15 / 1M tokens, output $0.60 / 1M tokens  
+> - => Như vậy GPT-4o đắt hơn GPT-4o-mini khoảng 33 lần (input: $5/$0.15 ≈ 33.33, output: $20/$0.60 ≈ 33.33).
 
 **Mô tả một trường hợp mà chi phí cao hơn của GPT-4o là xứng đáng, và một trường hợp GPT-4o-mini là lựa chọn tốt hơn:**
 > *Câu trả lời của bạn*
-- GPT-4o phù hợp khi cần chất lượng suy luận cao, ví dụ trợ lý AI cho bác sĩ hoặc luật sư, phân tích tài liệu phức tạp, xử lý đa ngôn ngữ chất lượng cao, hoặc các tác vụ yêu cầu độ chính xác và khả năng suy luận mạnh.
-- Trong khi đó, GPT-4o-mini phù hợp hơn cho: chatbot hỗ trợ khách hàng, FAQ tự động, tóm tắt văn bản ngắn, hoặc các ứng dụng có lượng request lớn và cần tối ưu chi phí.
+>- GPT-4o phù hợp khi cần chất lượng suy luận cao, ví dụ trợ lý AI cho bác sĩ hoặc luật sư, phân tích tài liệu phức tạp, xử lý đa ngôn ngữ chất lượng cao, hoặc các tác vụ yêu cầu độ chính xác và khả năng suy luận mạnh.
+>- Trong khi đó, GPT-4o-mini phù hợp hơn cho: chatbot hỗ trợ khách hàng, FAQ tự động, tóm tắt văn bản ngắn, hoặc các ứng dụng có lượng request lớn và cần tối ưu chi phí.
 
 ---
 
