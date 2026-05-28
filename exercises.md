@@ -38,15 +38,23 @@ Xem xét kịch bản: 10.000 người dùng hoạt động mỗi ngày, mỗi n
 
 **Ước tính xem GPT-4o đắt hơn GPT-4o-mini bao nhiêu lần cho workload này:**
 > *Câu trả lời của bạn*
+- Tổng số token mỗi ngày là: 10.000 x 3 x ~350 = ~10.500.000 token/ngày (~10.5 triệu token)
+- So sánh giá:
++ GPT-4o: input $5 / 1M tokens, output $20 / 1M tokens
++ GPT-4o-mini: input $0.15 / 1M tokens, output $0.60 / 1M tokens
+=> Như vậy GPT-4o đắt hơn so với GPT-4o-mini: khoảng 33 lần (input: $5/$0.15 = ~33.33, output: $20/$0.60 = ~33.33) 
 
 **Mô tả một trường hợp mà chi phí cao hơn của GPT-4o là xứng đáng, và một trường hợp GPT-4o-mini là lựa chọn tốt hơn:**
 > *Câu trả lời của bạn*
+- GPT-4o phù hợp khi cần chất lượng suy luận cao, ví dụ trợ lý AI cho bác sĩ hoặc luật sư, phân tích tài liệu phức tạp, xử lý đa ngôn ngữ chất lượng cao, hoặc các tác vụ yêu cầu độ chính xác và khả năng suy luận mạnh.
+- Trong khi đó, GPT-4o-mini phù hợp hơn cho: chatbot hỗ trợ khách hàng, FAQ tự động, tóm tắt văn bản ngắn, hoặc các ứng dụng có lượng request lớn và cần tối ưu chi phí.
 
 ---
 
 ### Bài tập 2.3 — Trải Nghiệm Người Dùng với Streaming
 **Streaming quan trọng nhất trong trường hợp nào, và khi nào thì non-streaming lại phù hợp hơn?** (1 đoạn văn)
 > *Câu trả lời của bạn*
+Streaming quan trọng nhất trong chatbot hoặc trợ lý AI thời gian thực vì người dùng thấy phản hồi xuất hiện ngay lập tức, giúp trải nghiệm tự nhiên và giảm cảm giác chờ đợi. Ngược lại, non-streaming phù hợp hơn khi cần nhận toàn bộ kết quả hoàn chỉnh trước khi xử lý hoặc lưu trữ, như tạo báo cáo hoặc phân tích dữ liệu.
 
 
 ## Danh Sách Kiểm Tra Nộp Bài
